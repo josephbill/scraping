@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Scraped Data</title>
+    </head>
+    <body>
+        <h3>Scraped Data:</h3>
+        <h4>Title:</h4>
+        <!-- taking data shared from render template -->
+         <p>{{ title }}</p>
+
+         <h4>User agent is {{ user_agent }}</h4>
+
+         <h2>Links:</h2>
+         <ul>
+            {% for link in links %}
+                 <li><a href={{link}}>{{ link }}</a></li>
+            {% endfor %}
+         </ul>
+    </body>
+</html>
